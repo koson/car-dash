@@ -53,7 +53,7 @@ STM32746G-Discovery/stm32746g_discovery_ts.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../STM32746G-Discovery/../ft5336/ft5336.h \
- ../STM32746G-Discovery/../ft5336/../Drivers/ts.h
+ f:\onedrive\github\car-dash\drivers\ts.h
 
 ../STM32746G-Discovery/stm32746g_discovery_ts.h:
 
@@ -161,4 +161,4 @@ STM32746G-Discovery/stm32746g_discovery_ts.o: \
 
 ../STM32746G-Discovery/../ft5336/ft5336.h:
 
-../STM32746G-Discovery/../ft5336/../Drivers/ts.h:
+f:\onedrive\github\car-dash\drivers\ts.h:
