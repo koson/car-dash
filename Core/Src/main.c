@@ -200,7 +200,9 @@ void SecondTask(void const* argument)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	HAL_DBGMCU_EnableDBGStandbyMode();
+	HAL_DBGMCU_EnableDBGStopMode();
+	DBGMCU->APB1FZ |= DBGMCU_APB1_FZ_DBG_TIM6_STOP;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
