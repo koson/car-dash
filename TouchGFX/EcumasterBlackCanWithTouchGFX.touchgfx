@@ -4,6 +4,7 @@
       {
         "Components": [
           {
+            "Type": "Box",
             "Color": {
               "Red": 0,
               "Green": 0,
@@ -15,14 +16,15 @@
             "Y": 0,
             "Width": 800,
             "Height": 480,
-            "Type": "Box",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId41",
             "TextRotation": "0",
             "Color": {
@@ -38,14 +40,15 @@
             "Y": 218,
             "Width": 32,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId40",
             "TextRotation": "0",
             "Color": {
@@ -61,14 +64,15 @@
             "Y": 126,
             "Width": 29,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId33",
             "TextRotation": "0",
             "Color": {
@@ -84,14 +88,15 @@
             "Y": 136,
             "Width": 49,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId32",
             "TextRotation": "0",
             "Color": {
@@ -107,14 +112,15 @@
             "Y": 126,
             "Width": 46,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId9",
             "TextRotation": "0",
             "Color": {
@@ -135,14 +141,15 @@
             "Y": 77,
             "Width": 114,
             "Height": 62,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId7",
             "TextRotation": "0",
             "Color": {
@@ -163,14 +170,15 @@
             "Y": 85,
             "Width": 71,
             "Height": 41,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "Image",
             "RelativeFilename": "",
             "Alpha": 255,
             "Name": "backgroundImage",
@@ -178,14 +186,15 @@
             "Y": 63,
             "Width": 80,
             "Height": 80,
-            "Type": "Image",
             "Visible": false,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId11",
             "TextRotation": "0",
             "Color": {
@@ -206,14 +215,15 @@
             "Y": 63,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId12",
             "TextRotation": "0",
             "Color": {
@@ -234,14 +244,15 @@
             "Y": 63,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId13",
             "TextRotation": "0",
             "Color": {
@@ -262,14 +273,15 @@
             "Y": 62,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId14",
             "TextRotation": "0",
             "Color": {
@@ -290,14 +302,15 @@
             "Y": 62,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId15",
             "TextRotation": "0",
             "Color": {
@@ -318,14 +331,15 @@
             "Y": 63,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId16",
             "TextRotation": "0",
             "Color": {
@@ -346,14 +360,15 @@
             "Y": 63,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId17",
             "TextRotation": "0",
             "Color": {
@@ -374,14 +389,15 @@
             "Y": 62,
             "Width": 18,
             "Height": 15,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId18",
             "TextRotation": "0",
             "Color": {
@@ -402,14 +418,15 @@
             "Y": 62,
             "Width": 18,
             "Height": 14,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "Line",
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -428,14 +445,15 @@
             "Y": 58,
             "Width": 490,
             "Height": 5,
-            "Type": "Line",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId30",
             "TextRotation": "0",
             "Color": {
@@ -451,14 +469,15 @@
             "Y": 126,
             "Width": 25,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId31",
             "TextRotation": "0",
             "Color": {
@@ -474,14 +493,15 @@
             "Y": 193,
             "Width": 32,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId22",
             "TextRotation": "0",
             "Color": {
@@ -502,14 +522,15 @@
             "Y": 85,
             "Width": 60,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId24",
             "TextRotation": "0",
             "Color": {
@@ -530,14 +551,15 @@
             "Y": 153,
             "Width": 67,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId34",
             "TextRotation": "0",
             "Color": {
@@ -553,14 +575,15 @@
             "Y": 193,
             "Width": 45,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId35",
             "TextRotation": "0",
             "Color": {
@@ -576,14 +599,15 @@
             "Y": 193,
             "Width": 45,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId36",
             "TextRotation": "0",
             "Color": {
@@ -604,14 +628,15 @@
             "Y": 153,
             "Width": 75,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId38",
             "TextRotation": "0",
             "Color": {
@@ -632,14 +657,15 @@
             "Y": 153,
             "Width": 71,
             "Height": 40,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId42",
             "TextRotation": "0",
             "Color": {
@@ -655,14 +681,15 @@
             "Y": 240,
             "Width": 29,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "BoxProgress",
             "Color": {
               "Red": 255,
               "Green": 220,
@@ -685,14 +712,15 @@
             "Y": 226,
             "Width": 104,
             "Height": 14,
-            "Type": "BoxProgress",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "Line",
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -711,14 +739,15 @@
             "Y": 258,
             "Width": 180,
             "Height": 10,
-            "Type": "Line",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "Line",
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -737,14 +766,15 @@
             "Y": 258,
             "Width": 180,
             "Height": 10,
-            "Type": "Line",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId44",
             "TextRotation": "0",
             "Color": {
@@ -765,14 +795,15 @@
             "Y": 247,
             "Width": 60,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "ImageProgress",
             "FileNameProgress": "__designer\\Blue_ProgressIndicators_fill_tiling_red_yellow_fadeyellowred_small_transparent.png",
             "AnchorAtZero": true,
             "Direction": "Right",
@@ -791,14 +822,15 @@
             "Y": 1,
             "Width": 478,
             "Height": 55,
-            "Type": "ImageProgress",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId46",
             "TextRotation": "0",
             "Color": {
@@ -819,14 +851,15 @@
             "Y": 4,
             "Width": 55,
             "Height": 22,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId50",
             "TextRotation": "0",
             "Color": {
@@ -842,14 +875,15 @@
             "Y": 15,
             "Width": 20,
             "Height": 12,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId53",
             "TextRotation": "0",
             "Color": {
@@ -870,14 +904,15 @@
             "Y": 85,
             "Width": 72,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId55",
             "TextRotation": "0",
             "Color": {
@@ -898,14 +933,15 @@
             "Y": 158,
             "Width": 96,
             "Height": 60,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId68",
             "TextRotation": "0",
             "Color": {
@@ -926,14 +962,15 @@
             "Y": 153,
             "Width": 78,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId70",
             "TextRotation": "0",
             "Color": {
@@ -949,14 +986,15 @@
             "Y": 193,
             "Width": 46,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId71",
             "TextRotation": "0",
             "Color": {
@@ -977,14 +1015,15 @@
             "Y": 85,
             "Width": 68,
             "Height": 42,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId73",
             "TextRotation": "0",
             "Color": {
@@ -1000,14 +1039,15 @@
             "Y": 126,
             "Width": 55,
             "Height": 21,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
+            "Type": "TextArea",
             "TextId": "SingleUseId74",
             "TextRotation": "0",
             "Color": {
@@ -1028,8 +1068,8 @@
             "Y": 226,
             "Width": 19,
             "Height": 17,
-            "Type": "TextArea",
             "Visible": true,
+            "LockPosition": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -1306,5 +1346,5 @@
     "PortraitSkinY": 0,
     "DisplayOrientation": "Landscape"
   },
-  "Version": "4.13.0"
+  "Version": "4.16.1"
 }

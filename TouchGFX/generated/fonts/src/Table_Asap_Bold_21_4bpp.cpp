@@ -28,6 +28,7 @@ extern const uint8_t* const unicodes_Asap_Bold_21_4bpp[] =
     unicodes_Asap_Bold_21_4bpp_0
 };
 extern const touchgfx::KerningNode kerning_Asap_Bold_21_4bpp[];
+
 touchgfx::GeneratedFont& getFont_Asap_Bold_21_4bpp();
 
 touchgfx::GeneratedFont& getFont_Asap_Bold_21_4bpp()

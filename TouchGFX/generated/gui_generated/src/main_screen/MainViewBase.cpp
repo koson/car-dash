@@ -11,6 +11,9 @@ MainViewBase::MainViewBase()
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
+    __background.setPosition(0, 0, 480, 272);
+    __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+
     backgroundBox.setPosition(0, 0, 800, 480);
     backgroundBox.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
 
@@ -264,6 +267,7 @@ MainViewBase::MainViewBase()
     TpsNumberValue.setWildcard(TpsNumberValueBuffer);
     TpsNumberValue.setTypedText(touchgfx::TypedText(T_SINGLEUSEID74));
 
+    add(__background);
     add(backgroundBox);
     add(KpaDescriptor);
     add(CltDecsriptor);

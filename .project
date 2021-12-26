@@ -31,4 +31,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>EcumasterBlackCanWithTouchGFX.touchgfx</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/TouchGFX/EcumasterBlackCanWithTouchGFX.touchgfx</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

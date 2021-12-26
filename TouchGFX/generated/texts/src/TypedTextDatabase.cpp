@@ -13,7 +13,7 @@ extern touchgfx::GeneratedFont& getFont_Asap_Bold_60_4bpp();
 extern touchgfx::GeneratedFont& getFont_Asap_Bold_21_4bpp();
 extern touchgfx::GeneratedFont& getFont_Asap_Bold_10_4bpp();
 
-const touchgfx::Font* _fonts[] =
+const touchgfx::Font* touchgfx_fonts[] =
 {
     &(getFont_Asap_Bold_18_4bpp()),
     &(getFont_Asap_Bold_40_4bpp()),
@@ -106,13 +106,13 @@ uint16_t getInstanceSize()
 
 const touchgfx::Font** getFonts()
 {
-    return _fonts;
+    return touchgfx_fonts;
 }
 
 const touchgfx::Font* setFont(touchgfx::FontId fontId, const touchgfx::Font* font)
 {
-    const touchgfx::Font* old = _fonts[fontId];
-    _fonts[fontId] = font;
+    const touchgfx::Font* old = touchgfx_fonts[fontId];
+    touchgfx_fonts[fontId] = font;
     return old;
 }
 
@@ -121,25 +121,25 @@ void resetFont(touchgfx::FontId fontId)
     switch (fontId)
     {
     case 0:
-        _fonts[0] = &(getFont_Asap_Bold_18_4bpp());
+        touchgfx_fonts[0] = &(getFont_Asap_Bold_18_4bpp());
         break;
     case 1:
-        _fonts[1] = &(getFont_Asap_Bold_40_4bpp());
+        touchgfx_fonts[1] = &(getFont_Asap_Bold_40_4bpp());
         break;
     case 2:
-        _fonts[2] = &(getFont_Asap_Bold_30_4bpp());
+        touchgfx_fonts[2] = &(getFont_Asap_Bold_30_4bpp());
         break;
     case 3:
-        _fonts[3] = &(getFont_Asap_Bold_12_4bpp());
+        touchgfx_fonts[3] = &(getFont_Asap_Bold_12_4bpp());
         break;
     case 4:
-        _fonts[4] = &(getFont_Asap_Bold_60_4bpp());
+        touchgfx_fonts[4] = &(getFont_Asap_Bold_60_4bpp());
         break;
     case 5:
-        _fonts[5] = &(getFont_Asap_Bold_21_4bpp());
+        touchgfx_fonts[5] = &(getFont_Asap_Bold_21_4bpp());
         break;
     case 6:
-        _fonts[6] = &(getFont_Asap_Bold_10_4bpp());
+        touchgfx_fonts[6] = &(getFont_Asap_Bold_10_4bpp());
         break;
     }
 }

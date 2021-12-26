@@ -13,12 +13,12 @@ class CachedFont : public GeneratedFont
 {
 public:
     CachedFont(const struct touchgfx::BinaryFontData* data, FontId id, FontCache* _cache, const GeneratedFont* _flashFont)
-        : GeneratedFont((const GlyphNode*)((const uint8_t*)data + data->offsetToTable),
+        : GeneratedFont(0, //GlyphNode*
                         data->numberOfGlyphs,
                         data->height,
                         data->pixBelowBase,
                         data->bitsPerPixel,
-                        data->dataFormatA4,
+                        data->byteAlignRow,
                         data->maxLeft,
                         data->maxRight,
                         0, //glyphDataPointer

@@ -4,7 +4,6 @@
 #define BITMAPDATABASE_HPP
 
 #include <touchgfx/hal/Types.hpp>
-#include <touchgfx/lcd/LCD.hpp>
 #include <touchgfx/Bitmap.hpp>
 
 const uint16_t BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID = 0;

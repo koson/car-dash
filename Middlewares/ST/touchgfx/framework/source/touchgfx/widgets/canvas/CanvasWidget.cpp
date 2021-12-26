@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * This file is part of the TouchGFX 4.13.0 distribution.
+  * This file is part of the TouchGFX 4.16.1 distribution.
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -17,15 +17,11 @@
 
 namespace touchgfx
 {
-CanvasWidget::CanvasWidget() :
-    Widget(),
-    canvasPainter(0),
-    maxRenderLines(0x7FFF),
-    alpha(255)
-{
-}
-
-CanvasWidget::~CanvasWidget()
+CanvasWidget::CanvasWidget()
+    : Widget(),
+      canvasPainter(0),
+      maxRenderLines(0x7FFF),
+      alpha(255)
 {
 }
 
@@ -122,7 +118,7 @@ void CanvasWidget::draw(const Rect& invalidatedArea) const
     }
     if (maxRenderLines == 0x7FFF)
     {
-        maxRenderLines--;    // 0x7FFF means first draw
+        maxRenderLines--; // 0x7FFF means first draw
     }
 }
 
@@ -142,4 +138,9 @@ Rect CanvasWidget::getSolidRect() const
 {
     return Rect(0, 0, 0, 0);
 }
+
+void CanvasWidget::resetMaxRenderLines()
+{
+    maxRenderLines = 0x7FFF;
 }
+} // namespace touchgfx

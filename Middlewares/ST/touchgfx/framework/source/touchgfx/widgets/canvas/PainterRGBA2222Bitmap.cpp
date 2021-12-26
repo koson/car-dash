@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * This file is part of the TouchGFX 4.13.0 distribution.
+  * This file is part of the TouchGFX 4.16.1 distribution.
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -17,29 +17,12 @@
 
 namespace touchgfx
 {
-PainterRGBA2222Bitmap::PainterRGBA2222Bitmap(const Bitmap& bmp, uint8_t alpha) :
-    AbstractPainterRGBA2222(), bitmapRGBA2222Pointer(0)
-{
-    setBitmap(bmp);
-    setAlpha(alpha);
-}
-
 void PainterRGBA2222Bitmap::setBitmap(const Bitmap& bmp)
 {
     bitmap = bmp;
     assert((bitmap.getId() == BITMAP_INVALID || bitmap.getFormat() == Bitmap::RGBA2222) && "The chosen painter only works with RGBA2222 bitmaps");
     bitmapRectToFrameBuffer = bitmap.getRect();
     DisplayTransformation::transformDisplayToFrameBuffer(bitmapRectToFrameBuffer);
-}
-
-void PainterRGBA2222Bitmap::setAlpha(uint8_t alpha)
-{
-    painterAlpha = alpha;
-}
-
-uint8_t PainterRGBA2222Bitmap::getAlpha() const
-{
-    return painterAlpha;
 }
 
 void PainterRGBA2222Bitmap::render(uint8_t* ptr,
@@ -64,15 +47,14 @@ void PainterRGBA2222Bitmap::render(uint8_t* ptr,
         count = bitmapRectToFrameBuffer.width - currentX;
     }
 
-    uint8_t totalAlpha = LCD::div255(widgetAlpha * painterAlpha);
+    const uint8_t totalAlpha = LCD::div255(widgetAlpha * painterAlpha);
     const uint8_t* src = bitmapRGBA2222Pointer;
     if (totalAlpha == 0xFF)
     {
         do
         {
-            uint8_t srcAlpha = ((*src) & 0x03) * 0x55;
-            uint8_t alpha = LCD::div255((*covers) * srcAlpha);
-            covers++;
+            const uint8_t srcAlpha = ((*src) & 0x03) * 0x55;
+            const uint8_t alpha = LCD::div255((*covers++) * srcAlpha);
             if (alpha == 0xFF)
             {
                 // Solid pixel
@@ -85,16 +67,14 @@ void PainterRGBA2222Bitmap::render(uint8_t* ptr,
             }
             p++;
             src++;
-        }
-        while (--count != 0);
+        } while (--count != 0);
     }
     else
     {
         do
         {
-            uint8_t srcAlpha = ((*src) & 0x03) * 0x55;
-            uint8_t alpha = LCD::div255((*covers) * srcAlpha);
-            covers++;
+            const uint8_t srcAlpha = ((*src) & 0x03) * 0x55;
+            const uint8_t alpha = LCD::div255((*covers++) * srcAlpha);
             if (alpha) // This can never get to max=0xFF*0xFF as totalAlpha<255
             {
                 // Non-Transparent pixel
@@ -102,8 +82,7 @@ void PainterRGBA2222Bitmap::render(uint8_t* ptr,
             }
             p++;
             src++;
-        }
-        while (--count != 0);
+        } while (--count != 0);
     }
 }
 
@@ -116,8 +95,7 @@ bool PainterRGBA2222Bitmap::renderInit()
         return false;
     }
 
-    if ((currentX >= bitmapRectToFrameBuffer.width) ||
-            (currentY >= bitmapRectToFrameBuffer.height))
+    if ((currentX >= bitmapRectToFrameBuffer.width) || (currentY >= bitmapRectToFrameBuffer.height))
     {
         // Outside bitmap area, do not draw anything
         // Consider the following instead of "return" to get a tiled image:

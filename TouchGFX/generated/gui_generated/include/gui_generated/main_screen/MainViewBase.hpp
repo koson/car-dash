@@ -31,6 +31,7 @@ protected:
     /*
      * Member Declarations
      */
+    touchgfx::Box __background;
     touchgfx::Box backgroundBox;
     touchgfx::TextArea KpaDescriptor;
     touchgfx::TextArea CltDecsriptor;

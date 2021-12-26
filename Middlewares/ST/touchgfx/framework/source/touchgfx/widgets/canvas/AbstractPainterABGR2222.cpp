@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * This file is part of the TouchGFX 4.13.0 distribution.
+  * This file is part of the TouchGFX 4.16.1 distribution.
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -13,8 +13,8 @@
   ******************************************************************************
   */
 
-#include <touchgfx/widgets/canvas/AbstractPainterABGR2222.hpp>
 #include <touchgfx/Color.hpp>
+#include <touchgfx/widgets/canvas/AbstractPainterABGR2222.hpp>
 
 namespace touchgfx
 {
@@ -36,8 +36,7 @@ void AbstractPainterABGR2222::render(uint8_t* ptr,
             uint8_t red, green, blue, alpha;
             if (renderNext(red, green, blue, alpha))
             {
-                uint8_t combinedAlpha = LCD::div255((*covers) * LCD::div255(alpha * widgetAlpha));
-                covers++;
+                const uint8_t combinedAlpha = LCD::div255((*covers) * LCD::div255(alpha * widgetAlpha));
 
                 if (combinedAlpha == 0xFF) // max alpha=0xFF on "*covers" and max alpha=0xFF on "widgetAlpha"
                 {
@@ -46,25 +45,25 @@ void AbstractPainterABGR2222::render(uint8_t* ptr,
                 }
                 else
                 {
-                    uint8_t ialpha = 0xFF - combinedAlpha;
-                    uint8_t p_red = LCD8bpp_ABGR2222::getRedFromColor(*p);
-                    uint8_t p_green = LCD8bpp_ABGR2222::getGreenFromColor(*p);
-                    uint8_t p_blue = LCD8bpp_ABGR2222::getBlueFromColor(*p);
+                    const uint8_t ialpha = 0xFF - combinedAlpha;
+                    const uint8_t p_red = LCD8bpp_ABGR2222::getRedFromColor(*p);
+                    const uint8_t p_green = LCD8bpp_ABGR2222::getGreenFromColor(*p);
+                    const uint8_t p_blue = LCD8bpp_ABGR2222::getBlueFromColor(*p);
                     renderPixel(p,
                                 LCD::div255(red * combinedAlpha + p_red * ialpha),
                                 LCD::div255(green * combinedAlpha + p_green * ialpha),
                                 LCD::div255(blue * combinedAlpha + p_blue * ialpha));
                 }
             }
+            covers++;
             p++;
             currentX++;
-        }
-        while (--count != 0);
+        } while (--count != 0);
     }
 }
 
 void AbstractPainterABGR2222::renderPixel(uint8_t* p, uint8_t red, uint8_t green, uint8_t blue)
 {
-    *p = static_cast<uint8_t>(LCD8bpp_ABGR2222::getColorFromRGB(red, green, blue));
+    *p = LCD8bpp_ABGR2222::getColorFromRGB(red, green, blue);
 }
 } // namespace touchgfx
